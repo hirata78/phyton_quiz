@@ -102,7 +102,7 @@ def play(chances, phrases, gaps, answers):
         print ("\nThe phrases is: " + phrases)
         user_answer = input("Enter the answer to the gap" + gap + " : ")
         while user_answer != answers[index]:
-            remaining_chances -= 1
+            remaining_chances = -1
             if remaining_chances > last_chance:
                 user_answer = input("\nNot exactly, you still have " + str(remaining_chances) +
                                              " chances. Try again the answer to the gap: " + gap + " : ")
